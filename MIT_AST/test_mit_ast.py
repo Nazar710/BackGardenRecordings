@@ -38,7 +38,7 @@ cfile = 'speech_whistling2.wav'
 door_file = 'er_file_2023_09_02_10_00_17.wav'
 jack_file = 'er_file_2023_09_02_16_45_18.wav'
 owl_file = 'er_file_2023_09_04_7_13_08.wav'
-tit_file = 'few_garden_liles/er_file_2023_09_04_7_49_38.wav'
+tit_file = 'big_test_folder/few_garden_files/er_file_2023_09_04_7_49_38.wav'
 
 res = classifier.classify(tit_file)
 
