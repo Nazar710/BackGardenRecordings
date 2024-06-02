@@ -1,0 +1,11 @@
+Variable,Correlation Coefficient,P-value,Interpretation
+PrecipRate,-0.0879,0.0,"Very weak negative correlation. As precipitation rate increases, bird detections slightly decrease."
+PressureMax,0.1105,0.0,Very weak positive correlation. Higher maximum pressure is slightly associated with more bird detections.
+DewptAvg,-0.0386,2.39e-110,Very weak negative correlation. Higher average dew point slightly decreases bird detections.
+WindgustHigh,-0.2137,0.0,Weak negative correlation. Higher wind gusts are associated with fewer bird detections.
+WindspeedAvg,-0.214,0.0,Weak negative correlation. Higher average wind speed is associated with fewer bird detections.
+TempAve,-0.0125,5.07e-13,Very weak negative correlation. Higher average temperature slightly decreases bird detections.
+HumidityAvg,-0.0563,8.02e-233,Very weak negative correlation. Higher average humidity is slightly associated with fewer bird detections.
+WinddirAvg,-0.0879,0.0,Very weak negative correlation. Changes in average wind direction slightly decrease bird detections.
+UVHigh,0.0595,1.4e-260,Very weak positive correlation. Higher UV index is slightly associated with more bird detections.
+SolarRadiationHigh,0.0908,0.0,Very weak positive correlation. Higher solar radiation is slightly associated with more bird detections.
