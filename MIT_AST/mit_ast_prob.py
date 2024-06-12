@@ -41,8 +41,8 @@ class MIT_AST_model_prob():
         probabilities = torch.softmax(logits, dim=-1).squeeze()
 
         # Get the predicted class id and label
-        predicted_class_ids = torch.argmax(logits, dim=-1).item()
-        predicted_label = self.model.config.id2label[predicted_class_ids]
+        #predicted_class_ids = torch.argmax(logits, dim=-1).item()
+        #predicted_label = self.model.config.id2label[predicted_class_ids]
         
         # Convert probabilities to a list
         probabilities = probabilities.tolist()
@@ -57,14 +57,14 @@ class MIT_AST_model_prob():
         # Keep only the top 5 probabilities
         top_5_class_probabilities = dict(list(sorted_class_probabilities.items())[:5])
 
-        return predicted_label, top_5_class_probabilities
+        return top_5_class_probabilities #predicted_label, 
 
 # Example usage:
-# model = MIT_AST_model_prob()
-# wind_file ='/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/16/er_file_2024_01_01_14_18_13.wav'
-# # f_voice_file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_21.wav'
-# # file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_37.wav'
-# # speech_file = "/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_05.wav"
-# label, class_probabilities = model.classify(wind_file)
-# print("Predicted label:", label)
-# print("Top 5 class/prob:", class_probabilities)
+model = MIT_AST_model_prob()
+wind_file ='/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/16/er_file_2024_01_01_14_18_13.wav'
+# f_voice_file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_21.wav'
+# file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_37.wav'
+# speech_file = "/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_05.wav"
+class_probabilities = model.classify(wind_file)
+#print("Predicted label:", label)
+print("Top 5 class/prob:", class_probabilities)
