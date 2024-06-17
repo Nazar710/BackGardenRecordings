@@ -60,11 +60,11 @@ class MIT_AST_model_prob():
         return top_5_class_probabilities #predicted_label, 
 
 # Example usage:
-model = MIT_AST_model_prob()
-wind_file ='/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/16/er_file_2024_01_01_14_18_13.wav'
+#model = MIT_AST_model_prob()
+#wind_file ='/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/16/er_file_2024_01_01_14_18_13.wav'
 # f_voice_file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_21.wav'
 # file = '/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_37.wav'
 # speech_file = "/Users/evgenynazarenko/DACS_3_year/Thesis/GardenFiles23/garden_01012024/0/er_file_2024_01_01_11_07_05.wav"
-class_probabilities = model.classify(wind_file)
+#class_probabilities = model.classify(wind_file)
 #print("Predicted label:", label)
-print("Top 5 class/prob:", class_probabilities)
+##print("Top 5 class/prob:", class_probabilities)
